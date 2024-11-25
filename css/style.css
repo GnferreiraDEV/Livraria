@@ -1,0 +1,281 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+:root{
+    --primary-color: black;
+    --secondary-color: rgb(239, 235, 235);
+    --white: black;
+}
+
+#top{
+    background-color: var(--primary-color);
+}
+
+
+header, footer{
+    width: 100%;
+    background-color: var(--secondary-color);
+    padding: 20px 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    padding: 25px;
+}
+
+h3{
+    padding-left: 25px;
+}
+
+.categoria-bar ul {
+    list-style-type: none; 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+}
+
+
+.categoria-bar ul li {
+    margin: 0 15px; 
+}
+
+
+.categoria-bar ul li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 15px;
+    padding: 3px 8px; 
+    border-radius: 3px; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.categoria-bar ul li a:hover {
+    background-color: var(--white); 
+}
+
+
+@media (max-width: 600px) {
+    .categoria-bar ul {
+        flex-direction: column; 
+    }
+
+    .categoria-bar ul li {
+        margin: 10px 0;
+    }
+}
+
+
+#menu {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0;
+    min-height: auto;
+    margin: 0;
+    padding: 10px;
+}
+
+.meu-carrossel-container {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto; /* Centraliza o carrossel na página */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .meu-carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .meu-carrossel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .meu-carrossel img {
+    width: 100%;
+    display: block;
+  }
+  
+  .meu-carrossel-anterior,
+  .meu-carrossel-proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1000;
+  }
+  
+  .meu-carrossel-anterior {
+    left: 10px;
+  }
+  
+  .meu-carrossel-proximo {
+    right: 10px;
+  }
+  
+  .meu-carrossel-anterior:hover,
+  .meu-carrossel-proximo:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+
+#logo{
+    display: flex;
+    gap: 20px;
+}
+   
+#logo img{
+    width: 30px;
+}
+
+a{
+    color: black;
+}
+
+
+#catalogo{
+    width: 80px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var (--primary-color);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.livro{
+    width: 250px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px black solid;
+}
+
+.livro-img {
+    width: 130px; /* Define a largura */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.livro-img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.livro-img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#filmes {  
+    
+    width: 80px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var (--primary-color);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.filme {  
+    width: 250px;
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px black solid;
+}
+
+.filme-img {  
+    width: 130px; /* Define a largura */
+    height: auto; /* Mantém a proporção da imagem */
+}
+.filme-img{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.filme-img:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.book-cover{
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.btn:hover {
+    background-color: #e6e6e6;
+}
+
